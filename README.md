@@ -21,8 +21,8 @@ String to CamelCase coverter using Word Break Dynamic Programming Approach
 ##### Using in Physical Machines
    ``` bash
    root@localhost $ git clone https://github.com/sribs/CamelCase  
-   root@localhost $ go get github.com/gorilla/mux && go install /path/to/CamelCase/rest
-   root@localhost $ cd /path/to/CamelCase/rest; rest <Dictionary API Endpoint> [<Application ID> <Application Key>]
+   root@localhost $ go get github.com/gorilla/mux && go get github.com/sribs/CamelCase
+   root@localhost $ cd /path/to/CamelCase/; CamelCase <Dictionary API Endpoint> [<Application ID> <Application Key>]
    ```
 ##### Using Containers Commandline
    ``` bash
@@ -32,8 +32,8 @@ String to CamelCase coverter using Word Break Dynamic Programming Approach
     Please follow the Portal On Screen Instructions
 #### API Testing
 1. To get all CamelCase strings, `http://52.230.217.40/camelcase`
-2. To perform a GET or DELETE for a particular string, `https://camelcase.azurewebsites.net/camelcase/<strname>`
-3. To perform a POST for a particular string, `https://camelcase.azurewebsites.net/camelcase/<strname>/<minlength>`. minlength is a parameter that will greatly affect accuracy. To get good accuracy provide minlength=min(length of the valid subset word). This is mandatory
+2. To perform a GET or DELETE for a particular string, `http://52.230.217.40/camelcase/<strname>`
+3. To perform a POST for a particular string, `http://52.230.217.40/camelcase/<strname>/<minlength>`. minlength is a parameter that will greatly affect accuracy. To get good accuracy provide minlength=min(length of the valid subset word). This is mandatory
 4. For Dictionary Endpoint, here is another API: `http://flaskenglishdict.centralus.azurecontainer.io/api/<word>`
 ## Output
 ``` cmd
